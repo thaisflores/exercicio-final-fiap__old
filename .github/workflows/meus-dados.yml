@@ -1,0 +1,20 @@
+name: Meus Dados
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  meus-dados:
+    name: Meus Dados
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir NOME
+        run: echo "NOME: ${{ env.NOME }}"
+        
+      - name: Imprimir RA
+        run: echo "RA: ${{ env.RA }}"
+        
+      - name: Imprimir CURSO
+        run: echo "CURSO: ${{ env.CURSO }}"
