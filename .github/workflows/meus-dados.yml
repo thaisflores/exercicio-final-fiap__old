@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir NOME
-        run: echo "NOME: ${{ env.NOME }}"
+        run: echo "NOME: ${{env.NOME}}"
         
       - name: Imprimir RA
-        run: echo "RA: ${{ env.RA }}"
+        run: echo "RA: ${{env.RA}}"
         
       - name: Imprimir CURSO
-        run: echo "CURSO: ${{ env.CURSO }}"
+        run: echo "CURSO: ${{env.CURSO}}"
